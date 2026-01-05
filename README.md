@@ -1,36 +1,26 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<h1 align="center">โปรเจก $prejectname</h1>
+<p align="center">
+  <strong>โดย นายจารุปกรณ์ ธงพรรษา</strong>
+</p>
 
-## Getting Started
+---
 
-First, run the development server:
+### 🎯 จุดประสงค์
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+สร้างขึ้นเพื่อศึกษาและพัฒนาความรู้ความเข้าใจและทักษะด้านวิทยาการคอมพิวเตอร์ อีกทั้งเพื่อใช้ในการประกอบ Portfolio ในการสมัครศึกษาต่อในระดับอุดมศึกษาในรอบ Tcas1 (Portfolio)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 💡 แรงบันดาลใจในการสร้างโปรเจก
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+เกิดขึ้นเมื่อช่วงการสอบของโรงเรียน ผมและเพื่อนๆ ต้องการติวหนังสือกันจากที่บ้านของแต่ละคน โดยแต่ละคนจะสอนวิชาที่ตนเองถนัดให้กับเพื่อน แต่เครื่องมือที่มีอยู่มีความจำกัด เช่น:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- หากใช้การแชร์หน้าจอหรือใช้กล้องจะเกิดปัญหาภาพไม่ชัด
+- ถ้าใช้โปรแกรมบางตัวจะมีค่าใช้จ่ายเพิ่มเติม
+- ไม่สามารถส่งออกเป็น PDF เพื่ออ่านภายหลังได้
+- ไม่มีเครื่องมือที่ต้องการในการใช้ติว (เช่น magma.com ซึ่งดั้งเดิมเป็นโปรแกรมวาดรูป)
 
-## Learn More
+### ✨ ความคาดหวังในโปรเจก
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. ✅ สามารถใช้งานได้จริงในการติวหนังสือ
+2. 👥 ใช้ได้หลาย user พร้อมกันแบบ Realtime
+3. 🛠️ มีเครื่องมือที่จำเป็น เช่น แสดงรูป/Slide, วาด, ลบ, หลายหน้ากระดาษ
+4. 📄 สามารถ Export เป็น PDF ได้
