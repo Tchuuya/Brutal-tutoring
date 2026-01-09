@@ -9,8 +9,7 @@ html {
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
+    background-color: whitesmoke;
     overflow: hidden;
     touch-action: none;
     overscroll-behavior: none;
@@ -30,7 +29,7 @@ body {
 }
 
 #whiteboard {
-    border: 1px solid #ddd;
+    border: 1px solid lightgray;
     cursor: crosshair;
     display: block;
     background: white;
@@ -40,27 +39,35 @@ body {
     position: fixed;
     top: 20px;
     left: 20px;
-    background: white;
     padding: 12px 20px;
-    border-radius: 20px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     font-weight: bold;
-    color: #333;
+    color: dimgray;
+    border: 2px solid #FF746C;
+    border-radius: 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     z-index: 100;
+
+    -webkit-backdrop-filter: blur(10px) saturate(180%);
+    backdrop-filter: blur(10px) saturate(180%);
+    background-color: rgba(255,255,255,.5);
 }
 
 .zoom-bubble {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background: white;
     padding: 10px 15px;
-    border-radius: 25px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     gap: 8px;
     align-items: center;
+    border: 2px solid #FF746C;
+    border-radius: 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     z-index: 100;
+
+    -webkit-backdrop-filter: blur(10px) saturate(180%);
+    backdrop-filter: blur(10px) saturate(180%);
+    background-color: rgba(255,255,255,.5);
 }
 
 .zoom-bubble button {
@@ -68,7 +75,7 @@ body {
     height: 30px;
     border: none;
     border-radius: 50%;
-    background: #4CAF50;
+    background: #FF746C;
     color: white;
     cursor: pointer;
     font-size: 16px;
@@ -78,19 +85,22 @@ body {
 }
 
 .zoom-bubble button:hover {
-    background: #45a049;
-}
-
-.zoom-bubble button:last-child {
-    width: auto;
-    padding: 0 12px;
-    border-radius: 15px;
+    background: #e46a63;
 }
 
 .zoom-bubble span {
     font-size: 14px;
     font-weight: bold;
-    color: #333;
+    color: dimgray;
     min-width: 45px;
     text-align: center;
+}
+
+.custom-cursor {
+    position: fixed;
+    pointer-events: none;
+    font-size: 24px;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    user-select: none;
 }

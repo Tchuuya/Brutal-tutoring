@@ -1,0 +1,99 @@
+.toolbar-container {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 2px solid #FF746C;
+    border-radius: 30px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background-color: rgba(255,255,255,.7);
+}
+
+.tool-item {
+    padding: 8px;
+    border: 1px solid #FF746C;
+    background: white;
+    cursor: pointer;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+}
+
+.tool-item:hover {
+    background-color: whitesmoke;
+    border-color: black;
+}
+
+.tool-item.active {
+    background-color: #FF746C;
+    color: white;
+    border-color: #FF746C;
+}
+
+.line-divider {
+    width: 2px;
+    height: 25px;
+    background-color: whitesmoke;
+}
+
+.color-box {
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    border: 2px solid #FF746C;
+    cursor: pointer;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: transparent;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.color-box::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+
+.color-box::-webkit-color-swatch {
+    border: none;
+    border-radius: 50%;
+}
+
+.color-box::-moz-color-swatch {
+    border: none;
+    border-radius: 50%;
+}
+
+.shape-wrapper {
+    position: relative;
+}
+
+.shape-popup {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: transparent;
+    border: 2px solid #FF746C;
+    border-radius: 15px;
+    padding: 6px;
+    display: flex;
+    gap: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background-color: rgba(255,255,255,.5);
+}
+
+.shape-popup .tool-item {
+    margin: 0;
+    padding: 6px;
+}
